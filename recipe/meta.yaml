@@ -1,5 +1,5 @@
 {% set name = "matlab_kernel" %}
-{% set version = "0.16.11" %}
+{% set version = "0.17.0" %}
 
 
 package:
@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/matlab_kernel-{{ version }}.tar.gz
-  sha256: 93a58dda4d865a1cb3c9f1f9cdf5786a4aed09467bdf3e8d089124a7900fd73e
+  sha256: 030f2fa23e9b02d9a92045703b8d3c115e8dcce102ac59a37037bd0c62783a37
 
 build:
-  number: 3
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
@@ -34,7 +34,6 @@ test:
   requires:
     - pip
     - m2w64-grep  # [win]
- 
 about:
   home: https://github.com/Calysto/matlab_kernel
   license: MIT
