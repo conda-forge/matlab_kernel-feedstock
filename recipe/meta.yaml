@@ -1,5 +1,5 @@
 {% set name = "matlab_kernel" %}
-{% set version = "0.17.0" %}
+{% set version = "0.17.1" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/matlab_kernel-{{ version }}.tar.gz
-  sha256: 030f2fa23e9b02d9a92045703b8d3c115e8dcce102ac59a37037bd0c62783a37
+  sha256: a232b9293b7d7773cf760d925f760fc34d96af0796236eb27a84166edaa03f98
 
 build:
   number: 0
