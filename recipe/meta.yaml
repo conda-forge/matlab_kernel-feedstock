@@ -36,7 +36,8 @@ test:
   imports:
     - matlab_kernel
   commands:
-    - jupyter kernelspec list | grep matlab
+    - jupyter kernelspec list | grep matlab  # [not win]
+    - jupyter kernelspec list | findstr matlab  # [win]
   requires:
     - pip
     - m2w64-grep  # [win]
